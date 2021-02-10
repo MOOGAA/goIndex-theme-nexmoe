@@ -1,10 +1,10 @@
 const authConfig = {
-  "siteName": "Drive Index", 
+  "siteName": "Drive_Index", 
   "siteIcon": "",
   "version": "_4.28",
-  "client_id": "",
-  "client_secret": "",
-  "refresh_token": "", // Authorization token
+  "client_id": C_ID,
+  "client_secret": C_SEC,
+  "refresh_token": R_T, // Authorization token
 /**
  * Set up multiple Drives to be displayed; add multiples by format
  * [id]: It can be team folder id, subfolder id, or "root" (representing the root directory of personal disk);
@@ -20,15 +20,9 @@ const authConfig = {
  **/
   "roots": [
     {
-      id: "root", //you can use folderid other than root but then search wont work
-      name: "eg1",
-    },
-    {
-        id: "drive_id",
-        name: "eg2",
-        user: 'user1',
-        pass: "111",
-      }  
+      id: ID_1, //you can use folderid other than root but then search wont work
+      name: N_1,
+    }
   ],
 
   "files_list_page_size": 500,
@@ -45,8 +39,8 @@ const uiConfig = {
   "main_color": "blue",
   "accent_color": "blue",
   "fluid_navigation_bar": true,
-  "avatar": "https://i.ibb.co/DwMwdFv/photo-2020-05-25-22-58-28.jpg",
-  "disable_navicon": true
+  "avatar": A_I,
+  "disable_navicon": flase
 };
 
 /**
@@ -97,7 +91,7 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <script src="https://cdn.jsdelivr.net/gh/Genos2000/goIndex-theme-nexmoe@master/app_v3_en.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/MOOGAA/goIndex-theme-nexmoe@master/app_v3_en.min.js"></script>
 </head>
 <body>
 </body>
