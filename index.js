@@ -1,10 +1,10 @@
 const authConfig = {
-  "siteName": "Drive_Index", 
+  "siteName": "", 
   "siteIcon": "",
-  "version": "_4.28",
-  "client_id": C_ID,
-  "client_secret": C_SEC,
-  "refresh_token": R_T, // Authorization token
+  "version": "",
+  "client_id": "",
+  "client_secret": "",
+  "refresh_token": "", // Authorization token
 /**
  * Set up multiple Drives to be displayed; add multiples by format
  * [id]: It can be team folder id, subfolder id, or "root" (representing the root directory of personal disk);
